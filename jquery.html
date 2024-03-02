@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        button{
+            width: 13em;
+            height: 3em;
+            background-color: yellow;
+            border: 2px solid black;
+            box-shadow: 5px 5px 0px 2px black;
+            margin-right: 4em;
+            transition: 0.3s;
+        }
+        button:hover{
+            box-shadow: -5px -5px 0px 2px black;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+
+
+<script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+    });
+    </script>
+</body>
+</html>
